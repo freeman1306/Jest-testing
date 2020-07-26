@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/freeman1306/Jest-testing#readme",
   "devDependencies": {
+    "@types/jest": "^26.0.7",
     "jest": "^26.1.0"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
   }
 }

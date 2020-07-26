@@ -2,7 +2,7 @@ const { sum, nativeNull } = require('./intro')
 
 
 // the testing block of sum function
-subscribe('Sum function', () => {
+describe('Sum function', () => {
     test(' should eturn sum of two values', () => {
     
         expect(sum(1, 3)).toBe(4)
@@ -13,9 +13,15 @@ subscribe('Sum function', () => {
            expect(sum(2, 3)).toBeGreaterThan(4)
            expect(sum(2, 3)).toBeGreaterThanOrEqual(5)
        })
-       
-       
-       test('should return  null', () => {
-        
-       })
+      
 })
+
+
+describe('native null function', () => {
+    test('should return  null', () => {
+        expect(nativeNull()).toBe(null)
+        expect(nativeNull()).toBeNull()
+        expect(nativeNull()).toBeFalsy()
+        expect(nativeNull()).not.toBeTruthy()
+    })
+   })
